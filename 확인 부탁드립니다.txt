@@ -4,35 +4,47 @@
 2. 코드 파일 보는 법
     아무 폴더->Assets->Script(_Script)
 
-3. 본인이 작성한 코드 리스트>
-    1) 도둑들
+3. 본인이 작성한 코드 리스트
+1) 도둑들
+    스테이시 전환
         - BackGround
-        - Special_situation
-        - SpecialScene_2
-        - SpecialScene_3
-        - Cart_Generator
-        - Cart_Scene
-        - Cart_Scene2
-        - LoadingBar_1
-        - LoadingBar_2
-        - LoadingScene
         - nextstage
         - nextstage2
         - nextstage3
         - nextstage4
-        - runningmap_1
         - SettingScene
 
+    충돌시 스테이지 전환
+        -nextstage
+        - Special_situation
+        - SpecialScene_2
+        - SpecialScene_3
+
+    로딩바 구현
+        - LoadingBar_1
+        - LoadingBar_2
+
+    로딩 뒤 스테이지 전환
+        - LoadingScene
+
+    충돌시 데미지 구현
+        - Cart_Generator
+        - Cart_Scene
+        - Cart_Scene2
+
     2) Slime Tower Defence
+    자원 UI 시스템
         - BlueFruitUI
+        - YellowFruitUI
+        - RedFruitUI
+
+    몬스터 관련 
         - CurrentWave
         - Enemy_1
         - Enemy_Hp
-        - Fruits
-        - FruitUI
+    웨이브 시스탬
         - OneWaypoints
-        - RedFruitUI
         - TwoWaypoints
+    웨이브별 스폰 관리
         - WaveSpawner
         - WaveSystem
-        - YellowFruitUI
