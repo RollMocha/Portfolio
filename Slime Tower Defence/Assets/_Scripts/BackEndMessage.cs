@@ -8,9 +8,14 @@ using UnityEngine.SceneManagement;
 public class BackEndMessage : MonoBehaviour
 {
     //[Header("Login & Register")]
+    public InputField su_ID;
+    public InputField su_PW;
+    public InputField su_Email;
+
     public InputField ID;
     public InputField PW;
 
+    Change_Panel change_Panel = new Change_Panel();
     BackendReturnObject bro = new BackendReturnObject();
     //bool isSuccess = false;
 
@@ -39,20 +44,35 @@ public class BackEndMessage : MonoBehaviour
     //초기화 성공 이후 버튼 등을 통해 함수 실행
     public void CustomSignUp()
     {
-        string id = ID.text; // 원하는 아이디
-        string password = PW.text; // 원하는 비밀번호
+        string id = su_ID.text; // 원하는 아이디
+        string password = su_PW.text; // 원하는 비밀번호
+        string email = su_Email.text;
 
         Backend.BMember.CustomSignUp(id, password, callback => {
             if (callback.IsSuccess())
             {
                 Debug.Log("회원가입에 성공했습니다");
+                change_Panel.onClickChangeLoginButton();
             }
             else
             {
                 Debug.LogError("회원가입 실패!");
                 Debug.LogError(bro); // 뒤끝의 리턴케이스를 로그로 보여줍니다.
             }
-        });    
+        });
+        /*
+        Backend.BMember.UpdateCustomEmail(email, (callback) => {
+            if (callback.IsSuccess())
+            {
+                Debug.Log("이메일 가입에 성공했습니다");
+            }
+            else
+            {
+                Debug.LogError("이메일 가입 실패!");
+                Debug.LogError(bro); // 뒤끝의 리턴케이스를 로그로 보여줍니다.
+            }
+        });
+        */
     }
 
     public void CustomLogin()
