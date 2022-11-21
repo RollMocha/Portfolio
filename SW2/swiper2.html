@@ -32,20 +32,74 @@
                 width: 100%;
                 height: 100%;
             }
-            .swiper-slide:first-child {
-                background-color: red;
+            .swiper-wrapper #menu{
+                width: 100%;
+                height: 100px;
+                /*border: 1px solid black;*/
+                position: fixed;
+                top: 0;
+                font-size: 18px;
+                color: white;
+
             }
             
-            .swiper-slide:nth-child(2) {
+            .swiper-slide:first-child {
+                background-color: white;
+            }
+            
+            .swiper-slide:nth-child(2)>div:nth-child(1){
+                background-color:darkred;
+                width: 50%;
+                height: 100%;
+                position: absolute;
+            }
+            .swiper-slide:nth-child(2)>div:nth-child(1)>div{
+                border: 1px solid black;
+                width: 300px;
+                height: 300px;
+                position: absolute;
+                top: 100px;
+                left: 80px;
+            }
+            .swiper-slide:nth-child(2)>div:nth-child(1)>p{
+                position: absolute;
+                top: 400px;
+                left: 90px;
+                font-size: 20px;
+                font-weight: bold;
+            }
+            .swiper-slide:nth-child(2)>div:nth-child(1)>table{
+                position: absolute;
+                width: 400px;
+                height: 300px;
+                border: 1px solid black;
+                top: 100px;
+                right: 80px;
+            }
+            .swiper-slide:nth-child(2)>div:nth-child(1)>table tr th,
+            .swiper-slide:nth-child(2)>div:nth-child(1)>table tr td{
+                border: 1px solid black;
+            }
+            .swiper-slide:nth-child(2)>div:nth-child(1)>table tr th:nth-child(1){
+                width: 100px;
+            }
+            .swiper-slide:nth-child(2)>div:nth-child(2){
+                background-color:darkblue;
+                width: 50%;
+                height: 100%;
+                position: absolute;
+                right: 0;
+            }
+            .swiper-slide:nth-child(3) {
                 position: relative;
             }
-            .swiper-slide:nth-child(2)>div:nth-child(1){
+            .swiper-slide:nth-child(3)>div:nth-child(1){
                 width: 50%;
                 height: 100%;
                 background-color: greenyellow;
                 position: absolute;
             }
-            .swiper-slide:nth-child(2)>div:nth-child(2){
+            .swiper-slide:nth-child(3)>div:nth-child(2){
                 width: 50%;
                 height: 100%;
                 background-color: darkblue;
@@ -67,42 +121,42 @@
                 left: 100px;
             }
             
-            .swiper-slide:nth-child(5) {
+            .swiper-slide:nth-child(6) {
                 background-color: black;
             }
 
-            .swiper-slide:nth-child(5) table{
+            .swiper-slide:nth-child(6) table{
                 border: 1px solid white;
             }
-            .swiper-slide:nth-child(5)>table tr{
+            .swiper-slide:nth-child(6)>table tr{
                 border: 1px solid white;
                 color: white;
             }
-            .swiper-slide:nth-child(5)>table tr th,.swiper-slide:nth-child(5)>table tr td{
+            .swiper-slide:nth-child(6)>table tr th,.swiper-slide:nth-child(5)>table tr td{
                 border: 1px solid white;
             }
-            .swiper-slide:nth-child(5)>table tr th:nth-child(1),
-            .swiper-slide:nth-child(5)>table tr td:nth-child(1){
+            .swiper-slide:nth-child(6)>table tr th:nth-child(1),
+            .swiper-slide:nth-child(6)>table tr td:nth-child(1){
                 border: 1px solid white;
                 width: 180px;
             }
-            .swiper-slide:nth-child(5)>table tr th:nth-child(2),
-            .swiper-slide:nth-child(5)>table tr td:nth-child(2){
+            .swiper-slide:nth-child(6)>table tr th:nth-child(2),
+            .swiper-slide:nth-child(6)>table tr td:nth-child(2){
                 border: 1px solid white;
                 width: 110px;
             }
-            .swiper-slide:nth-child(5)>table tr th:nth-child(3),
-            .swiper-slide:nth-child(5)>table tr td:nth-child(3){
+            .swiper-slide:nth-child(6)>table tr th:nth-child(3),
+            .swiper-slide:nth-child(6)>table tr td:nth-child(3){
                 border: 1px solid white;
                 width: 250px;
             }
-            .swiper-slide:nth-child(5)>table tr th:nth-child(4),
-            .swiper-slide:nth-child(5)>table tr td:nth-child(4){
+            .swiper-slide:nth-child(6)>table tr th:nth-child(4),
+            .swiper-slide:nth-child(6)>table tr td:nth-child(4){
                 border: 1px solid white;
                 width: 450px;
             }
-            .swiper-slide:nth-child(5)>table tr th:nth-child(4),
-            .swiper-slide:nth-child(5)>table tr td:nth-child(4){
+            .swiper-slide:nth-child(6)>table tr th:nth-child(4),
+            .swiper-slide:nth-child(6)>table tr td:nth-child(4){
                 border: 1px solid white;
                 width: 450px;
             }
@@ -178,9 +232,54 @@
         <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
             <!-- Slides -->
+                <div id ="menu">
+                    <img src="raracost.png">
+                    <div id="menubox1">
+                    <div>라라코스트</div>
+                        <div>메뉴소개</div>
+                        <div>매장정보</div>
+                        <div>커뮤니티</div>
+                        <div>이벤트</div>
+                    </div>
+                    <div id="menubox2">
+                        <div>LOGIN</div>
+                        <div>/</div>
+                        <div>JOIN</div>
+                    <img src = "menu.png">
+                    </div>
+                </div>
                 <div class="swiper-slide">
-                    <div></div>
-                    <div></div>
+                    <div>
+                        <div>사진</div>
+                        <p>안녕하세요 저는 황지현입니다.</p>
+                        <table>
+                            <tr>
+                                <th>출생연도</th>
+                                <td>98년생</td>
+                            </tr>
+                            <tr>
+                                <th>연락처</th>
+                                <td>010-4711-1152</td>
+                            </tr>
+                            <tr>
+                                <th>이메일</th>
+                                <td>hwangjh9@naver.com</td>
+                            </tr>
+                            <tr>
+                                <th>주소</th>
+                                <td>부산광역시 기장군 정관5로 75, 정관신동아파밀리에 103동 303호</td>
+                            </tr>
+                            <tr>
+                                <th>github</th>
+                                <td>
+                                    <a href="https://github.com/RollMocha/Portfolio"></a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div>
+                        
+                    </div>
                 </div>
                 <div class="swiper-slide">
                     <div>
