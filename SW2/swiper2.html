@@ -32,7 +32,7 @@
                 width: 100%;
                 height: 100%;
             }
-            .swiper-wrapper #menu{
+            #menu{
                 width: 100%;
                 height: 100px;
                 /*border: 1px solid black;*/
@@ -40,20 +40,60 @@
                 top: 0;
                 font-size: 18px;
                 color: white;
-
+                z-index: 2;
             }
             
+            #menu>img{
+                width: 100px;
+                height: 100px;
+                border: 1px solid black;
+                position: absolute;
+                left: 10px;
+            }
+            #menu>div{
+                position: absolute;
+                
+            }
+            #menubox1{
+                width: 800px;
+                height: 50px;
+                top: 35px;
+                right: 300px;
+                display: flex;
+                justify-content: space-around;
+            }
+            #menubox1 div{
+                width: 100px;
+                height: 50px;
+            }
+            #menubox2{
+                width: 200px;
+                height: 100px;
+                top: 0;
+                right: 30px;
+                display: flex;
+            }
+            #menubox2 img{
+                width: 50px;
+                height: 50px;
+                margin: 20px;
+            }
+            #menubox2 div{
+                margin-top: 30px;
+            }
+
             .swiper-slide:first-child {
                 background-color: white;
             }
             
-            .swiper-slide:nth-child(2)>div:nth-child(1){
+            .swiper-slide:nth-child(1)>div:nth-child(1){
                 background-color:darkred;
-                width: 50%;
+                width: 40%;
                 height: 100%;
                 position: absolute;
+                top: -100%;
             }
-            .swiper-slide:nth-child(2)>div:nth-child(1)>div{
+            .swiper-slide:nth-child(1)>div:nth-child(1)>div{
                 border: 1px solid black;
                 width: 300px;
                 height: 300px;
@@ -61,45 +101,46 @@
                 top: 100px;
                 left: 80px;
             }
-            .swiper-slide:nth-child(2)>div:nth-child(1)>p{
+            .swiper-slide:nth-child(1)>div:nth-child(1)>p{
                 position: absolute;
                 top: 400px;
                 left: 90px;
                 font-size: 20px;
                 font-weight: bold;
             }
-            .swiper-slide:nth-child(2)>div:nth-child(1)>table{
+            .swiper-slide:nth-child(1)>div:nth-child(1)>table{
                 position: absolute;
-                width: 400px;
+                width: 280px;
                 height: 300px;
                 border: 1px solid black;
                 top: 100px;
                 right: 80px;
             }
-            .swiper-slide:nth-child(2)>div:nth-child(1)>table tr th,
-            .swiper-slide:nth-child(2)>div:nth-child(1)>table tr td{
+            .swiper-slide:nth-child(1)>div:nth-child(1)>table tr th,
+            .swiper-slide:nth-child(1)>div:nth-child(1)>table tr td{
                 border: 1px solid black;
             }
-            .swiper-slide:nth-child(2)>div:nth-child(1)>table tr th:nth-child(1){
+            .swiper-slide:nth-child(1)>div:nth-child(1)>table tr th:nth-child(1){
                 width: 100px;
             }
-            .swiper-slide:nth-child(2)>div:nth-child(2){
+            .swiper-slide:nth-child(1)>div:nth-child(2){
                 background-color:darkblue;
-                width: 50%;
+                width: 60%;
                 height: 100%;
                 position: absolute;
+                top: 100%;
                 right: 0;
             }
-            .swiper-slide:nth-child(3) {
+            .swiper-slide:nth-child(2) {
                 position: relative;
             }
-            .swiper-slide:nth-child(3)>div:nth-child(1){
+            .swiper-slide:nth-child(2)>div:nth-child(1){
                 width: 50%;
                 height: 100%;
                 background-color: greenyellow;
                 position: absolute;
             }
-            .swiper-slide:nth-child(3)>div:nth-child(2){
+            .swiper-slide:nth-child(2)>div:nth-child(2){
                 width: 50%;
                 height: 100%;
                 background-color: darkblue;
@@ -121,42 +162,42 @@
                 left: 100px;
             }
             
-            .swiper-slide:nth-child(6) {
+            .swiper-slide:nth-child(5) {
                 background-color: black;
             }
 
-            .swiper-slide:nth-child(6) table{
+            .swiper-slide:nth-child(5) table{
                 border: 1px solid white;
             }
-            .swiper-slide:nth-child(6)>table tr{
+            .swiper-slide:nth-child(5)>table tr{
                 border: 1px solid white;
                 color: white;
             }
-            .swiper-slide:nth-child(6)>table tr th,.swiper-slide:nth-child(5)>table tr td{
+            .swiper-slide:nth-child(5)>table tr th,.swiper-slide:nth-child(5)>table tr td{
                 border: 1px solid white;
             }
-            .swiper-slide:nth-child(6)>table tr th:nth-child(1),
-            .swiper-slide:nth-child(6)>table tr td:nth-child(1){
+            .swiper-slide:nth-child(5)>table tr th:nth-child(1),
+            .swiper-slide:nth-child(5)>table tr td:nth-child(1){
                 border: 1px solid white;
                 width: 180px;
             }
-            .swiper-slide:nth-child(6)>table tr th:nth-child(2),
-            .swiper-slide:nth-child(6)>table tr td:nth-child(2){
+            .swiper-slide:nth-child(5)>table tr th:nth-child(2),
+            .swiper-slide:nth-child(5)>table tr td:nth-child(2){
                 border: 1px solid white;
                 width: 110px;
             }
-            .swiper-slide:nth-child(6)>table tr th:nth-child(3),
-            .swiper-slide:nth-child(6)>table tr td:nth-child(3){
+            .swiper-slide:nth-child(5)>table tr th:nth-child(3),
+            .swiper-slide:nth-child(5)>table tr td:nth-child(3){
                 border: 1px solid white;
                 width: 250px;
             }
-            .swiper-slide:nth-child(6)>table tr th:nth-child(4),
-            .swiper-slide:nth-child(6)>table tr td:nth-child(4){
+            .swiper-slide:nth-child(5)>table tr th:nth-child(4),
+            .swiper-slide:nth-child(5)>table tr td:nth-child(4){
                 border: 1px solid white;
                 width: 450px;
             }
-            .swiper-slide:nth-child(6)>table tr th:nth-child(4),
-            .swiper-slide:nth-child(6)>table tr td:nth-child(4){
+            .swiper-slide:nth-child(5)>table tr th:nth-child(4),
+            .swiper-slide:nth-child(5)>table tr td:nth-child(4){
                 border: 1px solid white;
                 width: 450px;
             }
@@ -223,31 +264,120 @@
                 top: 10px;
                 left: 10px;
             }
+            #menu2{
+                width: 100px;
+                height: 400px;
+                position: fixed;
+                top: 300px;
+                right: 30px;
+                z-index: 2;
+            }
+            #menu2 .img{
+                width: 60%;
+                height: 60px;
+                background-color: black;
+                border-radius: 50%;
+                margin: 25px;
+            }
+            #motorcycle{
+                width: 30px;
+                height: 30px;
+                position: absolute;
+                top:40px;
+                right: 30px;
+            }
+            #view{
+                width: 25px;
+                height: 35px;
+                position: absolute;
+                top:125px;
+                right: 32px;
+            }
+            #headset{
+                width: 35px;
+                height: 35px;
+                position: absolute;
+                top:210px;
+                right: 28px;
+            }
+            #store{
+                width: 35px;
+                height: 35px;
+                position: absolute;
+                top:295px;
+                right: 28px;
+            }
+            .img1 div{
+                color: white;
+                font-size: 12px;
+                position: absolute;
+                top:90px;
+                right: 5px;
+            }
+            .img2 div{
+                color: white;
+                font-size: 12px;
+                position: absolute;
+                top:175px;
+                right: 20px;
+            }
+            .img3 div{
+                color: white;
+                font-size: 12px;
+                position: absolute;
+                top:260px;
+                right: 20px;
+            }
+            .img4 div{
+                color: white;
+                font-size: 12px;
+                position: absolute;
+                top:345px;
+                right: 20px;
+            }
         </style>
         <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     </head>
     <body>
+        <div id ="menu">
+            <img src="raracost.png">
+            <div id="menubox1">
+            <div>라라코스트</div>
+                <div>메뉴소개</div>
+                <div>매장정보</div>
+                <div>커뮤니티</div>
+                <div>이벤트</div>
+            </div>
+            <div id="menubox2">
+                <div>LOGIN</div>
+                <div>/</div>
+                <div>JOIN</div>
+                <img src = "menu.png">
+            </div>
+        </div>
+        <div id="menu2">
+            <div class = "img img1">
+                <img src="motorcycle.png" id = "motorcycle">
+                <div>RARA Delivery</div>
+            </div>
+            <div class = "img img2">
+                <img src="view.png" id = "view">
+                <div>매장찾기</div>
+            </div>
+            <div class = "img img3">
+                <img src="headset.png" id = "headset">
+                <div>고객센터</div>
+            </div>
+            <div class = "img img4">
+                <img src="store.png" id = "store">
+                <div>창업문의</div>
+            </div>
+        </div>
         <!-- Slider main container -->
         <div class="swiper">
         <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
             <!-- Slides -->
-                <div id ="menu">
-                    <img src="raracost.png">
-                    <div id="menubox1">
-                    <div>라라코스트</div>
-                        <div>메뉴소개</div>
-                        <div>매장정보</div>
-                        <div>커뮤니티</div>
-                        <div>이벤트</div>
-                    </div>
-                    <div id="menubox2">
-                        <div>LOGIN</div>
-                        <div>/</div>
-                        <div>JOIN</div>
-                    <img src = "menu.png">
-                    </div>
-                </div>
                 <div class="swiper-slide">
                     <div>
                         <div>사진</div>
@@ -363,24 +493,25 @@
             <!-- If we need scrollbar -->
             <!-- <div class="swiper-scrollbar"></div> -->
         </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script>
             //{키:값}
             const swiper = new Swiper('.swiper', {
                 // Optional parameters
-                direction: 'vertical',
+                direction: 'vertical',//세로 슬라이드
                 // loop: true,
-                effect: 'slide',
+                effect: 'slide', //효과 : 미끄러지듯이
                 // autoplay: {
                 //     delay: 1000
                 // },
-                mousewheel: {
-                    invert: true,
+                mousewheel: {//마우스 휠 관련
+                    invert: true//거꾸로
                 },
                 // If we need pagination
-                pagination: {
+                pagination: {//페이지수 메기기
                     el: '.swiper-pagination',
                     clickable: true
-                },
+                }
 
                 // Navigation arrows
                 // navigation: {
@@ -396,13 +527,28 @@
         
             let swi = document.getElementsByClassName("swiper")[0];
 
+            $(".swiper-slide:nth-child(1)>div:nth-child(1)").stop().animate({top:"0%"},1000);
+            $(".swiper-slide:nth-child(1)>div:nth-child(2)").stop().animate({top:"0%"},1000);
+
             swiper.on("slideChangeTransitionEnd", (sw) => {
-                // console.log(sw.activeIndex);
-                // console.log(sw.realIndex);
+                //console.log(sw.activeIndex);
+                //console.log(sw.realIndex);
                 if (sw.activeIndex == 2) {
                     swi.classList.add("showHello");
-                }   else {
+                }   
+                else {
                     swi.classList.remove("showHello");
+                }
+                
+                if (sw.activeIndex == 0) {
+                    console.log("Hello");
+                    $(".swiper-slide:nth-child(1)>div:nth-child(1)").stop().animate({top:"0%"},1000);
+                    $(".swiper-slide:nth-child(1)>div:nth-child(2)").stop().animate({top:"0%"},1000);
+                }
+                else{
+                    console.log("Hello");
+                    $(".swiper-slide:nth-child(1)>div:nth-child(1)").stop().animate({top:"-100%"});
+                    $(".swiper-slide:nth-child(1)>div:nth-child(2)").stop().animate({top:"100%"});
                 }
             });
         </script>
