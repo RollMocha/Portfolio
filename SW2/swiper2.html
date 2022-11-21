@@ -51,9 +51,16 @@
                 left: 10px;
             }
             #menu>div{
-                position: absolute;
+                position: absolute;  
+            }
+            .btn_menu>div{
+                background-color: rgba(0, 0, 0, 0.5);
                 
             }
+            .btn_menu>div:first-child{
+                margin-top: 30px;
+            }
+
             #menubox1{
                 width: 800px;
                 height: 50px;
@@ -342,11 +349,15 @@
         <div id ="menu">
             <img src="raracost.png">
             <div id="menubox1">
-            <div>라라코스트</div>
-                <div>메뉴소개</div>
-                <div>매장정보</div>
-                <div>커뮤니티</div>
-                <div>이벤트</div>
+                <div class = "btn_menu">라라코스트</div>
+                <div class = "btn_menu">메뉴소개
+                    <div>a</div>
+                    <div>b</div>
+                    <div>c</div>
+                </div>
+                <div class = "btn_menu">매장정보</div>
+                <div class = "btn_menu">커뮤니티</div>
+                <div class = "btn_menu">이벤트</div>
             </div>
             <div id="menubox2">
                 <div>LOGIN</div>
