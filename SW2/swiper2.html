@@ -10,7 +10,7 @@
 
     라이브 가상 서버: vscode의 플러그인 프로그램
  -->
- <!DOCTYPE html>
+<!DOCTYPE html>
     <html lang="ko">
     <head>
         <meta charset="UTF-8">
@@ -53,6 +53,11 @@
             #menu>div{
                 position: absolute;
             }
+            .btn_menu:hover div{
+                background-color: rgba(0, 0, 0, 0.5);
+                width: 300px;
+                display:block;
+            }
             .btn_menu p{
                 
                 /* text-decoration: underline;
@@ -61,17 +66,15 @@
                 text-align: center;
                 border-bottom: 2px solid red;
                 padding: 2px; 
-               
-            }
-            
-            .btn_menu div{
-                background-color: rgba(0, 0, 0, 0.5);
             }
             .btn_menu>div:first-child{
                 margin-top: 30px;
             }
             .btn{
                 width: 150px;
+                display: none;
+                transform: scale(1.5);
+                margin: 25px;
             }
             #menubox1{
                 width: 800px;
