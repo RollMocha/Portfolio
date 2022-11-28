@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        div{
+            width: 800px;
+            height: 600px;
+            margin: 0 auto;
+        }
+        table{
+            width: 800px;
+            border-collapse: collapse;
+        }
+        table tr:nth-child(1) th:nth-child(1){
+            width: 160px;
+        }
+        table tr th,table tr td{
+            border: 1px solid black;
+            text-align: center;
+        }
+        #search{
+            position: absolute;
+            right: 0px;
+        }
+        #add{
+            position: absolute;
+            top: 80px;
+            right: 660px;
+        }
+    </style>
+</head>
+<body>
+    <h1>게시판</h1>
+    <a href="/add" id = "add">추가</a>
+    <hr>
+    <div>
+        <table>
+            <tr>
+                <th>번호</th>
+                <th>제목</th>
+            </tr>
+            <% result.forEach(function(item, index) { %>
+            <tr>
+                <td>
+                    <%= item.board_no %>
+                </td>
+                <td>
+                    <%= item.board_title %>
+                </td>
+            </tr>
+            <% }); %>
+        </table>
+    </div>
+    <div id = "search">
+        <input type="text"> <input type="button" value="검색">
+    </div>
+</body>
+</html>
